@@ -31,7 +31,7 @@ este playlist o room se encuentra en pycogym [https://play.picoctf.org/playlists
 
 una ves dentro veremos 5 secciones.
 
-[seccion 1 (sanity)](/broken/pages/jiJrv00vDOz19IMmC40m)
+[seccion 1 (sanity)](begginers-labs/seccion-1-sanity.md)
 
 seccion 2 (cyberchef)
 
