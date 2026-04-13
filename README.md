@@ -21,7 +21,7 @@ layout:
     visible: true
 ---
 
-# Copy of begginers labs
+# begginers labs
 
 
 
