@@ -26,13 +26,13 @@ Una vez dentro vamos a encontrar **5 secciones**, cada una enfocada en un tema d
 
 ### 📋 Índice de secciones
 
-| # | Sección                                                                      | Tema principal            | Estado  |
-| - | ---------------------------------------------------------------------------- | ------------------------- | ------- |
-| 1 | [Sección 1 — Sanity](/broken/pages/ea9c300912008c7acf3119aaf37281cc3407b15a) | General Skills / Terminal | ✅ Done  |
-| 2 | Sección 2 — CyberChef                                                        | Criptografía / Encodings  | 🔜 Soon |
-| 3 | Sección 3                                                                    | _Por definir_             | ⏳       |
-| 4 | Sección 4 — Python                                                           | Programación / Scripting  | ⏳       |
-| 5 | Sección 5                                                                    | _Por definir_             | ⏳       |
+| # | Sección                                   | Tema principal            | Estado  |
+| - | ----------------------------------------- | ------------------------- | ------- |
+| 1 | [Sección 1 — Sanity](seccion-1-sanity.md) | General Skills / Terminal | ✅ Done  |
+| 2 | Sección 2 — CyberChef                     | Criptografía / Encodings  | 🔜 Soon |
+| 3 | Sección 3                                 | _Por definir_             | ⏳       |
+| 4 | Sección 4 — Python                        | Programación / Scripting  | ⏳       |
+| 5 | Sección 5                                 | _Por definir_             | ⏳       |
 
 > ☝️ Los enlaces se irán activando conforme vayamos completando cada sección.
 
