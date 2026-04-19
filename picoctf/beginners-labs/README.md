@@ -26,13 +26,13 @@ Una vez dentro vamos a encontrar **5 secciones**, cada una enfocada en un tema d
 
 ### 📋 Índice de secciones
 
-| # | Sección                                   | Tema principal            | Estado  |
-| - | ----------------------------------------- | ------------------------- | ------- |
-| 1 | [Sección 1 — Sanity](seccion-1-sanity.md) | General Skills / Terminal | ✅ Done  |
-| 2 | Sección 2 — CyberChef                     | Criptografía / Encodings  | 🔜 Soon |
-| 3 | Sección 3                                 | _Por definir_             | ⏳       |
-| 4 | Sección 4 — Python                        | Programación / Scripting  | ⏳       |
-| 5 | Sección 5                                 | _Por definir_             | ⏳       |
+| # | Sección                                         | Tema principal                    | Estado |
+| - | ----------------------------------------------- | --------------------------------- | ------ |
+| 1 | [Sección 1 — Sanity](seccion-1-sanity.md)       | General Skills / Terminal         | ✅ Done |
+| 2 | [Sección 2 — CyberChef](seccion-2-cyberchef.md) | Criptografía / Encodings          | ✅ Done |
+| 3 | [Sección 3](seccion-3-general-skills.md)        | General Skills / web explotations | ✅ Done |
+| 4 | Sección 4 — Python                              | Programación / Scripting          | ✅ Done |
+| 5 | Sección 5                                       | _Por definir_                     | ✅ Done |
 
 > ☝️ Los enlaces se irán activando conforme vayamos completando cada sección.
 
@@ -44,7 +44,7 @@ Tranqui, no pasa nada. Si sientes que aún te falta base para arrancar con los r
 
 Ahí vas a encontrar desde guías de Linux hasta tutoriales de criptografía y programación. Es todo lo que necesitas para prepararte antes de meterte de lleno con los retos.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 > 💡 **Mi recomendación:** incluso si ya sabes algo, dale un vistazo rápido a los recursos. Siempre hay algún concepto que se te pudo haber escapado, y en CTFs los detalles importan mucho.
 

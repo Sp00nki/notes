@@ -4,7 +4,7 @@
   * [beginners labs](picoctf/beginners-labs/README.md)
     * [seccion 1 (sanity)](picoctf/beginners-labs/seccion-1-sanity.md)
     * [seccion 2 (cyberchef)](picoctf/beginners-labs/seccion-2-cyberchef.md)
-    * [Section 3](picoctf/beginners-labs/section-3.md)
+    * [seccion 3 (general skills)](picoctf/beginners-labs/seccion-3-general-skills.md)
     * [Section 4 (Python)](picoctf/beginners-labs/section-4-python.md)
 * [Dockerlabs](dockerlabs/README.md)
   * [Muy Facil](dockerlabs/muy-facil/README.md)
@@ -19,3 +19,4 @@
   * [Facil](dockerlabs/facil.md)
   * [Medio](dockerlabs/medio.md)
   * [Dificil](dockerlabs/dificil.md)
+* [Page 1](page-1.md)
