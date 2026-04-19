@@ -5,6 +5,7 @@
     * [seccion 1 (sanity)](picoctf/beginners-labs/seccion-1-sanity.md)
     * [seccion 2 (cyberchef)](picoctf/beginners-labs/seccion-2-cyberchef.md)
     * [Section 3](picoctf/beginners-labs/section-3.md)
+    * [Section 4 (Python)](picoctf/beginners-labs/section-4-python.md)
 * [Dockerlabs](dockerlabs/README.md)
   * [Muy Facil](dockerlabs/muy-facil/README.md)
     * [Trust](dockerlabs/muy-facil/trust.md)
