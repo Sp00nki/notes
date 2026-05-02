@@ -30,7 +30,7 @@ cat values.txt
 
 Nos devuelve algo que **parece** una flag, pero con letras sin sentido — eso es porque está en ROT13. Toca descifrarlo.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% tabs %}
 {% tab title="Opción web" %}
@@ -50,7 +50,7 @@ cat values.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 
 Y ahí la tenemos, flag capturada. 🎯
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -60,7 +60,7 @@ En este reto nos toca hacer una **conversión de bases**: pasar de **base 16 (he
 
 El valor que nos dan es `0x3D`.
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 > **Bases numéricas en 30 segundos:**
 
@@ -94,7 +94,7 @@ Ambos te devuelven `61` — que es la respuesta y nuestra flag. ✅
 {% endtab %}
 {% endtabs %}
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -102,7 +102,7 @@ Ambos te devuelven `61` — que es la respuesta y nuestra flag. ✅
 
 Misma mecánica que el anterior pero con bases diferentes: ahora toca pasar de **base 10 (decimal)** a **base 2 (binario)**.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 El número que nos dan es `42`. _(La respuesta a todo, según la Guía del Autoestopista Galáctico 🌌)_
 
@@ -135,7 +135,7 @@ Resultado: `101010` — flag obtenida. 🎯
 {% endtab %}
 {% endtabs %}
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

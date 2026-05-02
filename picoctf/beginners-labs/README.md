@@ -44,7 +44,7 @@ Tranqui, no pasa nada. Si sientes que aún te falta base para arrancar con los r
 
 Ahí vas a encontrar desde guías de Linux hasta tutoriales de criptografía y programación. Es todo lo que necesitas para prepararte antes de meterte de lleno con los retos.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 > 💡 **Mi recomendación:** incluso si ya sabes algo, dale un vistazo rápido a los recursos. Siempre hay algún concepto que se te pudo haber escapado, y en CTFs los detalles importan mucho.
 
