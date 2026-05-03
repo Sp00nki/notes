@@ -116,3 +116,15 @@ esto quiere decir que el chr() funcion convierte el valor numero a un caracter u
 
 
 
+### Pw Crack 3
+
+vale aqui se pone un toque mas dificil por que nos ensuciaremos las manos y escribiremos codigo&#x20;
+
+como prima isntancia nos dice que podriamos necesitar encryptar la contraseña para comparlarlo con el hash , pero para que hacerlo debemos de adiviniar cual es la contraseña para el programa cheker
+
+<figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
