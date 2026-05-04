@@ -1,14 +1,24 @@
-# seccion 1 (sanity)
+---
+description: >-
+  Primera sección de la playlist para principiantes de picoCTF.   Retos de
+  General Skills para familiarizarte con el entorno y la terminal.
+---
+
+# 🧪 seccion 1 (sanity)
 
 > En esta primera tanda nos encontramos con retos de **General Skills**, básicamente para comprobar que sabes moverte por una terminal Linux sin morir en el intento. Si ya tienes algo de experiencia con bash, esto va a ser pan comido. 🍞
 
 ## 🐱 Obedient Cat
 
+<details>
+
+<summary><strong>Dificultad:</strong> 🟢 Facil</summary>
+
 Arrancamos con algo bien sencillo: el reto nos dice que la flag está **a simple vista** dentro de un archivo. Nada de magia aquí.
 
 Lo primero que se nos viene a la cabeza es usar el comando `cat`.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **¿Qué es `cat`?**\
@@ -23,7 +33,7 @@ Descargamos el archivo que nos da el reto a nuestra máquina local _(esto tambi�
 cat flag
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Y listo, ahí está la flag esperándonos en texto plano. 🎯
 
@@ -31,11 +41,19 @@ Y listo, ahí está la flag esperándonos en texto plano. 🎯
 💡 Son comandos básicos de Linux, si no los conoces te recomiendo practicarlos porque los vas a usar **todo el tiempo**.
 {% endhint %}
 
+
+
+</details>
+
 ## 🔐 Súper SSH
+
+<details>
+
+<summary><strong>Dificultad:</strong> 🟢 Facil</summary>
 
 Seguimos avanzando. Este reto nos pide conectarnos a un servidor remoto mediante **SSH** para encontrar la flag.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **¿Qué es SSH?**\
@@ -51,7 +69,7 @@ Al iniciar la instancia del reto _(botón celeste)_, nos dan la siguiente info:
 * **Usuario:** `ctf-player`
 * **Contraseña:** `1db87a14`
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Nos conectamos con el siguiente comando:
 
@@ -70,13 +88,21 @@ ssh ctf-player@titan.picoctf.net -p 61368
 
 Al ejecutarlo nos pedirá la contraseña que ya nos dieron → la escribimos (no se va a ver en pantalla, es normal) y **boom**, nos muestra la flag directamente. ✅
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+</details>
 
 ## 🌐 What's a Net Cat?
 
+<details>
+
+<summary><strong>Dificultad:</strong> 🟢 Facil</summary>
+
 Más de lo mismo por aquí. Iniciamos la instancia y vemos que nos pide usar **Netcat**.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **¿Qué es Netcat?**\
@@ -95,7 +121,11 @@ nc fickle-tempest.picoctf.net 60695
 
 Nos conectamos al host en el puerto indicado y automáticamente nos devuelve la flag. Así de directo. 🎯
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+</details>
 
 ## ✅ Sección completada
 
