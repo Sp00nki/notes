@@ -6,7 +6,6 @@
     * [🔐 seccion 2 (cyberchef)](picoctf/beginners-labs/seccion-2-cyberchef.md)
     * [🛠️ seccion 3 (general skills)](picoctf/beginners-labs/seccion-3-general-skills.md)
     * [🐍  seccion 4 (python)](picoctf/beginners-labs/seccion-4-python.md)
-    * [Section 5 (analizis y explotacion)](picoctf/beginners-labs/section-5-analizis-y-explotacion.md)
     * [🔍 Section 5 (Analisis y Explotacion)](picoctf/beginners-labs/section-5-analisis-y-explotacion.md)
 * [Dockerlabs](dockerlabs/README.md)
   * [Muy Facil](dockerlabs/muy-facil/README.md)
