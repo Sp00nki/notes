@@ -26,13 +26,13 @@ Una vez dentro vamos a encontrar **5 secciones**, cada una enfocada en un tema d
 
 ### 📋 Índice de secciones
 
-| # | Sección                                         | Tema principal                    | Estado |
-| - | ----------------------------------------------- | --------------------------------- | ------ |
-| 1 | [Sección 1 — Sanity](seccion-1-sanity.md)       | General Skills / Terminal         | ✅ Done |
-| 2 | [Sección 2 — CyberChef](seccion-2-cyberchef.md) | Criptografía / Encodings          | ✅ Done |
-| 3 | [Sección 3](seccion-3-general-skills.md)        | General Skills / web explotations | ✅ Done |
-| 4 | Sección 4 — Python                              | Programación / Scripting          | ✅ Done |
-| 5 | Sección 5                                       | _Por definir_                     | ✅ Done |
+| # | Sección                                                                   | Tema principal                             | Estado |
+| - | ------------------------------------------------------------------------- | ------------------------------------------ | ------ |
+| 1 | [Section 1 — Sanity](section-1-sanity.md)                                 | General Skills / Terminal                  | ✅ Done |
+| 2 | [Section 2 — CyberChef](section-2-cyberchef.md)                           | Criptografía / Encodings                   | ✅ Done |
+| 3 | [Section 3 — General Skills](section-3-general-skills.md)                 | General Skills / web explotations          | ✅ Done |
+| 4 | [Section 4 — Python](seccion-4-python.md)                                 | Programación / Scripting                   | ✅ Done |
+| 5 | [Section 5 — Analisis y Explotacion](section-5-analisis-y-explotacion.md) | _Reversing /_ binary explotation/ forensis | ✅ Done |
 
 > ☝️ Los enlaces se irán activando conforme vayamos completando cada sección.
 

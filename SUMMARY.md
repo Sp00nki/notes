@@ -2,9 +2,9 @@
 
 * [PicoCTF](README.md)
   * [🏁 beginners labs](picoctf/beginners-labs/README.md)
-    * [🧪 seccion 1 (sanity)](picoctf/beginners-labs/seccion-1-sanity.md)
-    * [🔐 seccion 2 (cyberchef)](picoctf/beginners-labs/seccion-2-cyberchef.md)
-    * [🛠️ seccion 3 (general skills)](picoctf/beginners-labs/seccion-3-general-skills.md)
+    * [🧪 section 1 (sanity)](picoctf/beginners-labs/section-1-sanity.md)
+    * [🔐 section 2 (cyberchef)](picoctf/beginners-labs/section-2-cyberchef.md)
+    * [🛠️ section 3 (general skills)](picoctf/beginners-labs/section-3-general-skills.md)
     * [🐍  seccion 4 (python)](picoctf/beginners-labs/seccion-4-python.md)
     * [🔍 Section 5 (Analisis y Explotacion)](picoctf/beginners-labs/section-5-analisis-y-explotacion.md)
 * [Dockerlabs](dockerlabs/README.md)
