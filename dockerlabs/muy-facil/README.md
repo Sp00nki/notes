@@ -1,6 +1,6 @@
 # Muy Facil
 
-<button type="button" class="button primary" data-action="search" data-icon="magnifying-glass">maquina</button>
+
 
 {% content-ref url="trust.md" %}
 [trust.md](trust.md)
