@@ -1,13 +1,13 @@
 # Table of contents
 
-* [PicoCTF](README.md)
+* [⚡️ PicoCTF](README.md)
   * [🏁 beginners labs](picoctf/beginners-labs/README.md)
     * [🧪 section 1 (sanity)](picoctf/beginners-labs/section-1-sanity.md)
     * [🔐 section 2 (cyberchef)](picoctf/beginners-labs/section-2-cyberchef.md)
     * [🛠️ section 3 (general skills)](picoctf/beginners-labs/section-3-general-skills.md)
     * [🐍  seccion 4 (python)](picoctf/beginners-labs/seccion-4-python.md)
     * [🔍 Section 5 (Analisis y Explotacion)](picoctf/beginners-labs/section-5-analisis-y-explotacion.md)
-* [Dockerlabs](dockerlabs/README.md)
+* [🐋 DockerLabs](dockerlabs/README.md)
   * [Muy Facil](dockerlabs/muy-facil/README.md)
     * [Trust](dockerlabs/muy-facil/trust.md)
     * [FirstHacking](dockerlabs/muy-facil/firsthacking.md)
@@ -20,4 +20,5 @@
   * [Facil](dockerlabs/facil.md)
   * [Medio](dockerlabs/medio.md)
   * [Dificil](dockerlabs/dificil.md)
-* [Page 1](page-1.md)
+* [🌳 HackTheBox](hackthebox.md)
+* [🥊 TryHackme](tryhackme.md)
