@@ -92,6 +92,8 @@ Tenemos el puerto 22 abierto, tenemos un usuario (mario), pero nos falta la cont
 hydra -l mario -P /usr/share/wordlists/rockyou.txt ssh://172.18.0.2
 ```
 
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 | Flag                 | Función                                                                   |
 | -------------------- | ------------------------------------------------------------------------- |
 | -l mario             | Especifica el usuario en minúscula (login).                               |
@@ -106,6 +108,8 @@ En cuestión de segundos, Hydra hace su magia y nos escupe una contraseña váli
 
 Estar dentro está cheto, pero nosotros queremos ser el administrador supremo (root). Esta fase se llama **Post-Explotación / Escalada de Privilegios**.
 
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 ¿Cómo pasamos de ser el compa Mario a ser el dueño del servidor?\
 Lo primero de manual es revisar qué permisos especiales tiene nuestro usuario.
 
@@ -118,6 +122,8 @@ codeBash
 ```
 sudo -l
 ```
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 (Este comando lista qué cosas podemos ejecutar como superusuario).
 
@@ -133,6 +139,8 @@ codeBash
 sudo vim -c ':!/bin/bash'
 ```
 
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 | Parte         | Función                                                               |
 | ------------- | --------------------------------------------------------------------- |
 | sudo vim      | Abrimos el editor de texto como dios (root).                          |
@@ -145,8 +153,7 @@ Le damos al Enter y la magia ocurre. Nuestro prompt cambia. **Somos ROOT.** 😈
 
 ### 🖤 Cierre
 
-> \[!NOTE]\
-> Y así es como obtenemos el control total del sistema.\
+> \[Y así es como obtenemos el control total del sistema.\
 > Sí, sé que fue mucho texto, pero creo genuinamente que una resolución así, explicada paso a paso y entendiendo por qué fallan las cosas, es la mejor forma de aprender. De nada sirve tirar comandos a lo NPC si no entendemos qué hacen por debajo. 🧠💡
 
 ```

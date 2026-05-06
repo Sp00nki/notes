@@ -4,7 +4,7 @@ description: >-
   General Skills para familiarizarte con el entorno y la terminal.
 ---
 
-# 🧪 seccion 1 (sanity)
+# 🧪 section 1 (sanity)
 
 > En esta primera tanda nos encontramos con retos de **General Skills**, básicamente para comprobar que sabes moverte por una terminal Linux sin morir en el intento. Si ya tienes algo de experiencia con bash, esto va a ser pan comido. 🍞
 
@@ -18,7 +18,7 @@ Arrancamos con algo bien sencillo: el reto nos dice que la flag está **a simple
 
 Lo primero que se nos viene a la cabeza es usar el comando `cat`.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **¿Qué es `cat`?**\
@@ -33,7 +33,7 @@ Descargamos el archivo que nos da el reto a nuestra máquina local _(esto tambi�
 cat flag
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Y listo, ahí está la flag esperándonos en texto plano. 🎯
 
@@ -53,7 +53,7 @@ Y listo, ahí está la flag esperándonos en texto plano. 🎯
 
 Seguimos avanzando. Este reto nos pide conectarnos a un servidor remoto mediante **SSH** para encontrar la flag.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **¿Qué es SSH?**\
@@ -69,7 +69,7 @@ Al iniciar la instancia del reto _(botón celeste)_, nos dan la siguiente info:
 * **Usuario:** `ctf-player`
 * **Contraseña:** `1db87a14`
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Nos conectamos con el siguiente comando:
 

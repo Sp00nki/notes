@@ -4,7 +4,7 @@ description: >-
   la criptografía básica, encodings y conversiones de bases.
 ---
 
-# 🔐 seccion 2 (cyberchef)
+# 🔐 section 2 (cyberchef)
 
 > En esta segunda tanda entramos al mundo de la **criptografía** y los métodos de encriptado más comunes. Nada del otro mundo todavía, pero es fundamental entender estas bases _(literal y figurativamente)_ antes de meterse con cosas más pesadas.
 
@@ -40,13 +40,13 @@ cat values.txt
 
 Nos devuelve algo que **parece** una flag, pero con letras sin sentido — eso es porque está en ROT13. Toca descifrarlo.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Lo metes en CyberChef y aplicas la receta ROT13.Usamos tr para hacer la rotación directamente:cat values.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'¿Qué hace este comando? tr (translate) reemplaza caracteres. Le estamos diciendo: "toma las letras A-Z y cámbialas por N-Z seguido de A-M", que es exactamente la rotación de 13 posiciones.
 
 Y ahí la tenemos, flag capturada. 🎯
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -64,7 +64,7 @@ En este reto nos toca hacer una **conversión de bases**: pasar de **base 16 (he
 
 El valor que nos dan es `0x3D`.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 > **Bases numéricas en 30 segundos:**
 
@@ -80,7 +80,7 @@ El valor que nos dan es `0x3D`.
 
 CyberChef con la receta From Hex.Tengo dos comandos favoritos para esto:printf "%d\n" 0x3Decho "ibase=16; 3D" | bc    # sin el prefijo 0xAmbos te devuelven 61 — que es la respuesta y nuestra flag. ✅
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
