@@ -2,8 +2,8 @@
 
 
 
-{% content-ref url="trust/" %}
-[trust](trust/)
+{% content-ref url="trust.md" %}
+[trust.md](trust.md)
 {% endcontent-ref %}
 
 {% content-ref url="firsthacking.md" %}

@@ -1,6 +1,8 @@
 # 🤝  Trust
 
-> En esta máquina no nos dan contexto ni descripción. Es literalmente entrar al lobby y ver qué nos depara el destino. Spoiler: hubo desarrollo de personaje. Como siempre: **siempre hackeando, nunca webiando.** 😤
+> **Dificultad:** Muy Fácil | **OS:** Linux \
+> **Servicio explotado:** SSH Fuerza bruta\
+> &#xNAN;_&#x48;echo a mano, sin Metasploit, con mucho sudor y amor al hacking._ 🔥
 
 ***
 
@@ -8,7 +10,7 @@
 
 El setup es súper simple. La máquina es un contenedor Docker. Si nunca has desplegado una, dejaré una guía corta en la sección de Dockerlabs (o puedes leer la docu oficial 🤖).
 
-<figure><img src="../../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
 
 Una vez arriba, nos escupe una dirección IP. Es hora de arrancar con la fase de reconocimiento.
 
@@ -24,7 +26,7 @@ Tiramos de nuestra vieja y confiable herramienta: nmap.
 nmap -sVC -Pn 172.18.0.2
 ```
 
-<figure><img src="../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
 #### 🧩 Desglose del comando
 
@@ -44,7 +46,7 @@ Lo primero que uno piensa es "me meto por SSH y listo", pero no tenemos ni usuar
 Entramos a la web y... pura información por defecto del servidor. Aburridísimo. 🥱\
 Pero aquí entra la malicia: ¿Y si hay directorios o archivos ocultos? Toca hacer fuerza bruta (fuzzing) de rutas.
 
-<figure><img src="../../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
 
 #### 🪄 El truco de las extensiones (-x)
 
@@ -58,7 +60,7 @@ Gobuster, por defecto, busca rutas limpias tipo host/secret. Si el archivo se ll
 gobuster dir -u http://172.18.0.2 -w /usr/share/wordlists/dirb/common.txt -x php,html,txt
 ```
 
-<figure><img src="../../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
 | Parte           | Función                                                                                                    |
 | --------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -79,7 +81,7 @@ Entramos a http://172.18.0.2/secret.php y nos encontramos un mensaje muy XD:
 
 > "Hola Mario, este sitio web no se puede hackear"
 
-<figure><img src="../../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
 La primera vez que vi esto pensé: "que hice mal sjdkjsdsk". \
 Pero en el hacking hay que ser minucioso. El ego del dev fue su perdición. Nos acaba de regalar un posible nombre de usuario: **Mario**.
@@ -88,11 +90,11 @@ Pero en el hacking hay que ser minucioso. El ego del dev fue su perdición. Nos 
 
 Tenemos el puerto 22 abierto, tenemos un usuario (mario), pero nos falta la contraseña. Es el momento perfecto para sacar a la mal educada **Hydra**.
 
-```
+```bash
 hydra -l mario -P /usr/share/wordlists/rockyou.txt ssh://172.18.0.2
 ```
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 | Flag                 | Función                                                                   |
 | -------------------- | ------------------------------------------------------------------------- |
@@ -108,7 +110,7 @@ En cuestión de segundos, Hydra hace su magia y nos escupe una contraseña váli
 
 Estar dentro está cheto, pero nosotros queremos ser el administrador supremo (root). Esta fase se llama **Post-Explotación / Escalada de Privilegios**.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ¿Cómo pasamos de ser el compa Mario a ser el dueño del servidor?\
 Lo primero de manual es revisar qué permisos especiales tiene nuestro usuario.
@@ -117,13 +119,11 @@ Lo primero de manual es revisar qué permisos especiales tiene nuestro usuario.
 
 Ejecutamos:
 
-codeBash
-
-```
+```bash
 sudo -l
 ```
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 (Este comando lista qué cosas podemos ejecutar como superusuario).
 
@@ -133,13 +133,11 @@ Y vemos una línea hermosa: nos dice que podemos ejecutar el binario **vim** (el
 
 Si podemos abrir vim como root, y dentro de vim podemos ejecutar comandos del sistema... la matemática es simple: ejecutamos una terminal (bash) desde adentro de vim y esa terminal nacerá con permisos de root. 🤯
 
-codeBash
-
-```
+```bash
 sudo vim -c ':!/bin/bash'
 ```
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Parte         | Función                                                               |
 | ------------- | --------------------------------------------------------------------- |
@@ -153,7 +151,7 @@ Le damos al Enter y la magia ocurre. Nuestro prompt cambia. **Somos ROOT.** 😈
 
 ### 🖤 Cierre
 
-> \[Y así es como obtenemos el control total del sistema.\
+> Y así es como obtenemos el control total del sistema.\
 > Sí, sé que fue mucho texto, pero creo genuinamente que una resolución así, explicada paso a paso y entendiendo por qué fallan las cosas, es la mejor forma de aprender. De nada sirve tirar comandos a lo NPC si no entendemos qué hacen por debajo. 🧠💡
 
 ```
