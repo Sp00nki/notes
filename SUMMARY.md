@@ -1,6 +1,7 @@
 # Table of contents
 
-* [⚡️ PicoCTF](README.md)
+* [readme](README.md)
+* [⚡️ PicoCTF](<README (1).md>)
   * [🏁 beginners labs](picoctf/beginners-labs/README.md)
     * [🧪 section 1 (sanity)](picoctf/beginners-labs/section-1-sanity.md)
     * [🔐 section 2 (cyberchef)](picoctf/beginners-labs/section-2-cyberchef.md)
