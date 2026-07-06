@@ -10,7 +10,7 @@
 
 Primero desplegamos la máquina en DockerLabs y esperamos a que levante correctamente. Nada del otro mundo aquí — la IP objetivo que nos asigna es `172.17.0.2`.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -25,7 +25,7 @@ nmap -sVC -Pn 172.17.0.2
 > `-sVC` → detecta versiones de servicios y lanza scripts básicos\
 > `-Pn` → no hace ping previo (útil si ICMP está bloqueado)
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 🎯 Resultados del escaneo
 
@@ -46,7 +46,7 @@ ftp 172.17.0.2
 # Usuario: anonymous
 ```
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Resultado:** ❌ Acceso denegado. En este caso está bien configurado — el acceso anónimo está desactivado.
 
@@ -58,7 +58,7 @@ Bien. No hay entrada fácil por ahí. Hora de investigar más sobre el servicio.
 
 Con la versión en mano (`vsftpd 2.3.4`), una búsqueda rápida en Google revela algo muy interesante:
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 > 🚨 **CVE-2011-2523** — El código fuente oficial de vsftpd 2.3.4 fue **comprometido maliciosamente**. Alguien inyectó un backdoor directamente en el binario que se distribuía al público.
 
@@ -118,7 +118,7 @@ ftp 172.17.0.2
 # Contraseña: cualquier_cosa
 ```
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 El servidor se queda "pensando"... no responde. Eso es la señal — el backdoor se está ejecutando del lado del servidor y el puerto 6200 acaba de abrirse. 👀
 
@@ -134,7 +134,7 @@ nc -v 172.17.0.2 6200
 
 #### Paso 3 — Shell como root 🎉
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 whoami
